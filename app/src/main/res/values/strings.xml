@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">Shuttle Service App</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="role_prompt">Pilih Role</string>
+
+    <string-array name="roles">
+        <item>Parents</item>
+        <item>Driver</item>
+    </string-array>
+
+    <string name="google_maps_key">ASK_RESTU_FOR_API_KEY</string>
+
 </resources>

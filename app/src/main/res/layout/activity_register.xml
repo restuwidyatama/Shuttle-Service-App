@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/white">
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_background"
+        android:padding="16dp"
+        android:layout_marginBottom="16dp"
+        android:hint="Nama" />
+
+    <EditText
+        android:id="@+id/editTextUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_background"
+        android:padding="16dp"
+        android:layout_marginBottom="16dp"
+        android:hint="Username" />
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:background="@drawable/edittext_background"
+        android:padding="16dp"
+        android:layout_marginBottom="16dp"
+        android:hint="Password" />
+
+    <EditText
+        android:id="@+id/editTextAge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:background="@drawable/edittext_background"
+        android:padding="16dp"
+        android:layout_marginBottom="16dp"
+        android:hint="Umur" />
+
+    <Spinner
+        android:id="@+id/spinnerRole"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_background"
+        android:padding="16dp"
+        android:layout_marginBottom="32dp"
+        android:entries="@array/roles"
+        android:prompt="@string/role_prompt"/>
+
+    <Button
+        android:id="@+id/buttonRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/blue_500"
+        android:textColor="@android:color/white"
+        android:padding="16dp"
+        android:text="Register" />
+
+</LinearLayout>

@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="16dp"
-    tools:context=".LoginActivity">
+    android:background="@color/white"
+    tools:context=".feature.login.LoginActivity">
 
     <TextView
         android:id="@+id/tvTitle"
@@ -58,7 +59,19 @@
         android:backgroundTint="@color/blue_500"
         android:textColor="@android:color/white"
         android:padding="16dp"
-        android:layout_marginBottom="102dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/btnRegister"/>
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:backgroundTint="@color/blue_500"
+        android:textColor="@android:color/white"
+        android:padding="16dp"
+        android:layout_marginBottom="92dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"/>

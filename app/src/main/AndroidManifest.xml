@@ -2,7 +2,12 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+
     <application
+        android:name=".MyApplication"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -12,18 +17,31 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ShuttleServiceApp"
         tools:targetApi="31">
-
         <activity
-            android:name=".SplashScreenActivity"
+            android:name=".feature.maps.MapsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".feature.register.RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".feature.splash.SplashScreenActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".feature.login.LoginActivity" />
+        <activity android:name=".MainActivity" />
 
-        <activity android:name=".LoginActivity"/>
-        <activity android:name=".MainActivity"/>
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
 
     </application>
+
 </manifest>

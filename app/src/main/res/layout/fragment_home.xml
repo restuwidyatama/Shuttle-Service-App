@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".feature.home.HomeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/textViewTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Selamat Datang!"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="20dp"/>
+
+        <Button
+            android:id="@+id/buttonAntar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Antar"
+            android:onClick="onAntarButtonClick"
+            android:layout_margin="10dp"/>
+
+        <Button
+            android:id="@+id/buttonJemput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Jemput"
+            android:onClick="onJemputButtonClick"
+            android:layout_margin="10dp"/>
+
+        <Button
+            android:id="@+id/buttonTracking"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tracking Location"
+            android:onClick="onTrackingButtonClick"
+            android:layout_margin="10dp"/>
+
+    </LinearLayout>
+
+</FrameLayout>
