@@ -33,8 +33,8 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
     private lateinit var markerOptions: MarkerOptions
     private lateinit var marker: Marker
     private lateinit var cameraPosition: CameraPosition
-    var defaultLongitude = -122.088426
-    var defaultLatitude  = 37.388064
+    var defaultLongitude = -6.8404486
+    var defaultLatitude  = 107.5120528
     private lateinit var googleMap: GoogleMap
     lateinit var pusher: Pusher
 
